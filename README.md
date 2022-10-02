@@ -5,7 +5,7 @@ Nesta single-page, é possível listar os filmes populares e realizar pesquisa d
 ### Demo:
 
 
-#### Links úteis: :globe_with_meridians: [Acesse a aplicação (Netlify)](https://truckpadcase.netlify.app/) :globe_with_meridians: [Trello](https://trello.com/invite/b/mUe1ea2R/e2ed255a76d4972b188b4bfa6bd16f98/case-agendaedu) :globe_with_meridians: [Figma](https://www.figma.com/file/iQRJcMd43RwOXEHuF8YxYC/TheMovieTV?node-id=0%3A1)
+#### Links úteis: :globe_with_meridians: [Acesse a aplicação (Netlify)](/) :globe_with_meridians: [Trello](https://trello.com/invite/b/mUe1ea2R/e2ed255a76d4972b188b4bfa6bd16f98/case-agendaedu) :globe_with_meridians: [Figma](https://www.figma.com/file/iQRJcMd43RwOXEHuF8YxYC/TheMovieTV?node-id=0%3A1)
 
 ****
 

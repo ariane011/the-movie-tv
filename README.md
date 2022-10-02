@@ -25,7 +25,7 @@ Nesta single-page, é possível listar os filmes populares e realizar pesquisa d
 ### 🏚️ Rodar o projeto localmente
 
 #### ⚠️ Pré-requisitos:
-Node.js e NPM instalado
+Node.js e YARN/NPM instalado
 #### Passo 1: Clone o projeto na sua máquina
 ```sh
 git clone git@github.com:ariane011/the-movie-tv.git

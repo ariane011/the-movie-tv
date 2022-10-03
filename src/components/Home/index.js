@@ -38,7 +38,11 @@ export const Home = () => {
             <Search onChange={(e) => setSearch(e.target.value)} />
           </Col>
         </Row>
-        <h1>Mais populares...</h1>
+        {search ? (
+          <h1>Resultados para {JSON.stringify(search)}</h1>
+        ) : (
+          <h1>Mais populares...</h1>
+        )}
         {movies.map((movie) => (
           <div style={{ marginLeft: 50, display: "inline-flex" }}>
             <Movies key={movie.id} movie={movie} />

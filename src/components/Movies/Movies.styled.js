@@ -4,12 +4,12 @@ export const Container = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 10px;
 `;
 
 export const Poster = styled.div`
   display: flex;
-  margin: 10px;
+  margin: 5px;
   img {
     border-radius: 7px;
     width: 250px;

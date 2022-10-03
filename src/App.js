@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import "./App.css";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 
 function App() {
   return (

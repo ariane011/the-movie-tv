@@ -33,6 +33,7 @@ export const Container = styled.div`
       border-color: #57606f;
       border-radius: 20px 0px 0px 20px !important;
       background-color: #3d3d3d;
+      color: #ced6e0;
     }
   }
   h1 {

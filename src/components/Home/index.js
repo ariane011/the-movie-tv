@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Styled } from "./Home.styled";
 import { Movies } from "../Movies";
-import { Row, Col } from "antd";
+import { Row, Col, message } from "antd";
 import { Search } from "../Search";
 import debounce from "lodash.debounce";
 import { SearchMovies } from "../../service/Search";
@@ -14,13 +14,19 @@ export const Home = () => {
 
   useEffect(() => {
     if (search.length !== 0) {
-      SearchMovies(search).then((response) => {
-        const movies = response.data;
-        const debounced = debounce(() => {
-          setMovies(movies.results);
-        }, 500);
-        debounced();
-      });
+      try {
+        SearchMovies(search).then((response) => {
+          const movies = response.data;
+          const debounced = debounce(() => {
+            setMovies(movies.results);
+          }, 500);
+          debounced();
+        });
+      } catch (error) {
+        message.error(
+          "Houve um erro ao fazer a requisição, tente novamente mais tarde."
+        );
+      }
     } else {
       PopularMovies().then((response) => {
         const movies = response.data;

@@ -16,6 +16,7 @@ export const Styled = styled.div`
 `;
 
 export const Container = styled.div`
+  background-color: #2f3640;
   .input-search {
     display: flex;
     justify-content: center;

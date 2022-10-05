@@ -4,11 +4,13 @@ import { Container } from "./Header.styled";
 
 export const Header = () => {
   return (
-    <Container>
-      <div>
-        <img src={iconTV} alt="Icone TV" />
-      </div>
-      <div>TheMovieTV</div>
-    </Container>
+    <a href={"/"}>
+      <Container>
+        <div>
+          <img src={iconTV} alt="Icone TV" />
+        </div>
+        <div>TheMovieTV</div>
+      </Container>
+    </a>
   );
 };

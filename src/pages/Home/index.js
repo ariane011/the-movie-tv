@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Container, Styled } from "./Home.styled";
-import { Movies } from "../Movies";
 import { Row, Col, message } from "antd";
-import { Search } from "../Search";
+import { Search } from "../../components/Search";
 import debounce from "lodash.debounce";
 import { SearchMovies } from "../../service/Search";
 import { PopularMovies } from "../../service/PopularMovies";
+import { MoviesList } from "../../components/MoviesList";
 
 export const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -17,10 +17,8 @@ export const Home = () => {
       try {
         SearchMovies(search).then((response) => {
           const movies = response.data;
-          const debounced = debounce(() => {
-            setMovies(movies.results);
-          }, 500);
-          debounced();
+          setMovies(movies.results);
+          console.log(movies);
         });
       } catch (error) {
         message.error(
@@ -41,7 +39,9 @@ export const Home = () => {
       <Container>
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col span={16}>
-            <Search onChange={(e) => setSearch(e.target.value)} />
+            <Search
+              onChange={debounce((e) => setSearch(e.target.value), 500)}
+            />
           </Col>
         </Row>
         {search ? (
@@ -50,8 +50,11 @@ export const Home = () => {
           <h1>Mais populares...</h1>
         )}
         {movies.map((movie) => (
-          <div style={{ marginLeft: 50, display: "inline-flex" }}>
-            <Movies key={movie.id} movie={movie} />
+          <div
+            style={{ marginLeft: 50, display: "inline-flex" }}
+            key={movie.id}
+          >
+            <MoviesList key={movie.id} movie={movie} />
           </div>
         ))}
       </Container>

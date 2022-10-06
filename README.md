@@ -16,7 +16,6 @@ Nesta single-page, é possível listar os filmes populares e realizar pesquisa d
 - [x] Axios
 - [x] Git
 - [x] GitHub
-- [x] JEST
 - [x] Netlify
 - [x] Figma
 

@@ -18,7 +18,6 @@ export const Home = () => {
         SearchMovies(search).then((response) => {
           const movies = response.data;
           setMovies(movies.results);
-          console.log(movies);
         });
       } catch (error) {
         message.error(

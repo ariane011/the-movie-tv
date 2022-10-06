@@ -4,6 +4,8 @@ Nesta single-page, é possível listar os filmes populares e realizar pesquisa d
 
 ### Demo:
 
+![chrome_uhdBlC0hNp](https://user-images.githubusercontent.com/25783083/194236981-be41c200-a8d8-4899-8ea8-954268162ddc.gif)
+
 
 #### Links úteis: :globe_with_meridians: [Trello](https://trello.com/invite/b/mUe1ea2R/e2ed255a76d4972b188b4bfa6bd16f98/case-agendaedu) :globe_with_meridians: [Figma](https://www.figma.com/file/iQRJcMd43RwOXEHuF8YxYC/TheMovieTV?node-id=0%3A1)
 
@@ -46,4 +48,6 @@ yarn start
 ````
 #### Passo 5: Abra o navegador e visualize o projeto
 
+```sh
 http://localhost:3000
+````

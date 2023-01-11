@@ -1,5 +1,5 @@
 ## :tv: TheMovieTV
-#### O TheMovieTV é um projeto desenvolvido para um case de Front-End do AgendaEdu
+#### O TheMovieTV é um projeto desenvolvido para um case de Front-End
 Nesta single-page, é possível listar os filmes populares e realizar pesquisa de filmes
 
 ### Demo:
